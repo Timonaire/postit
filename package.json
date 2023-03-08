@@ -1,0 +1,20 @@
+{
+  "name": "post-it",
+  "version": "1.0.0",
+  "description": "Post-it is a simple social media app that tallows you to post anything (text, images, video, and/or audio) on a single post-it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akolite98/Post-it.git"
+  },
+  "keywords": [],
+  "author": "Precious Nnorom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akolite98/Post-it/issues"
+  },
+  "homepage": "https://github.com/Akolite98/Post-it#readme"
+}
