@@ -1,7 +1,8 @@
 const express = require("express");
+const morgan = require("morgan");
 
 const app = express();
 
-app.listen(9290, () => {
-  console.log("listening on", 9290);
-});
+if (process.env.NODE_ENV === "development") {
+  app.use(morgan("dev"));
+}
