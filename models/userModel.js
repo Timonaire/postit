@@ -1,4 +1,5 @@
-import mongoose from "mongoose";
+// import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const { Schema, model } = mongoose;
 
@@ -19,4 +20,20 @@ user.methods.toJSON = function () {
   return userObject;
 };
 
-export default model("User", user);
+const User = mongoose.model("User", userSchema);
+
+module.exports = User;
+
+// const testUser = new User({
+//   email: "akolite98@gmail.com",
+//   password: "Akolite",
+// });
+
+// testUser
+//   .save()
+//   .then((doc) => {
+//     console.log.log(doc);
+//   })
+//   .catch((err) => {
+//     console.log("ERROR:", err);
+//   });
