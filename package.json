@@ -1,5 +1,5 @@
 {
-  "name": "post-it",
+  "name": "postit",
   "version": "1.0.0",
   "description": "Post-it is a simple social media app that tallows you to post anything (text, images, video, and/or audio) on a single post-it",
   "main": "index.js",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Akolite98/Post-it.git"
+    "url": "git+https://github.com/Timonaire/postit.git"
   },
   "keywords": [],
-  "author": "Precious Nnorom",
+  "author": "Timothy Ikechukwu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Akolite98/Post-it/issues"
@@ -37,5 +37,6 @@
     "slugify": "^1.6.5",
     "validator": "^13.9.0",
     "xss-clean": "^0.1.1"
-  }
+  },
+  "devDependencies": {}
 }
