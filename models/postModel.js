@@ -9,8 +9,8 @@ const post = new Schema(
       required: [true, "A post must have a comment"],
       unique: true,
       trim: true,
-      maxLength: [200, "A post   must have less or equal than 200 characters"],
-      minLength: [10, "A post  must have more or equal than 10 characters"],
+      maxLength: [1000, "A post   must have less or equal than 1000 characters"],
+      minLength: [1, "A post  must have more or equal than 1 character"],
     },
     title: {
       type: String,

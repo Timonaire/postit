@@ -9,10 +9,10 @@ const comment = new Schema(
       unique: true,
       trim: true,
       maxLength: [
-        100,
-        "A comment   must have less or equal than 100 characters",
+        1000,
+        "A comment   must have less or equal than 1000 characters",
       ],
-      minLength: [10, "A comment  must have more or equal than 10 characters"],
+      minLength: [1, "A comment  must have more or equal than 1 character"],
     },
     author: {
       type: mongoose.Schema.Types.ObjectId,

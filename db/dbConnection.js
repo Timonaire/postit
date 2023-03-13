@@ -12,8 +12,8 @@ mongoose
     { autoIndex: false }
   )
   .then(() => {
-    console.log("database dey very functional🔥");
+    console.log("database is functional");
   })
   .catch((e) => {
-    console.log("Database Crash😭", e);
+    console.log("Database Crashed", e);
   });

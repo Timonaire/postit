@@ -1,10 +1,12 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose');
 
-const { Schema, model } = mongoose;
+const Schema = mongoose.Schema;
+const model = mongoose.model;
 
 const user = new Schema(
   {
-    email: { type: String, required: true },
+    name:{type: String, required: true},
+    email: { type: String, required: true, unique: true },
     password: { type: String, default: "", trim: true },
   },
   { timestamps: true }
@@ -19,4 +21,5 @@ user.methods.toJSON = function () {
   return userObject;
 };
 
-export default model("User", user);
+module.exports = model("User", user);
+
